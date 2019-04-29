@@ -38,6 +38,11 @@ public class TestService {
         return testDao.getList();
     }
 
+    @TargetDataSource(name = "ds2")
+    public List<Demo> getListByDs2(){
+        return testDao.getList();
+    }
+
 }
 
 
