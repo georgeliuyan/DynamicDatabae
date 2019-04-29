@@ -1,0 +1,22 @@
+server:
+    port: 1900
+spring:
+    datasource:
+        url: jdbc:postgresql://localhost:5432/postgres
+        username: postgres
+        password: 123
+        driver-class-name: org.postgresql.Driver
+# 更多数据源
+custom:
+    datasource:
+        names: ds1,ds2
+        ds1:
+            url: jdbc:postgresql://192.168.4.50:5432/postgres
+            username: postgres
+            password: postgres
+            driver-class-name: org.postgresql.Driver
+        ds2:
+            url: jdbc:postgresql://192.168.48.193:5432/postgres
+            username: postgres
+            password: postgres
+            driver-class-name: org.postgresql.Driver
